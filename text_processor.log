@@ -1,0 +1,72 @@
+2024-11-13 22:58:33,598 - ERROR - Failed to initialize LLM: OpenAI API key not found in environment variables
+2024-11-13 23:05:55,036 - ERROR - Error in keyboard listener: name 'keyboard' is not defined
+2024-11-13 23:05:55,036 - INFO - Text processor stopped
+2024-11-13 23:05:55,036 - INFO - Text processor stopped
+2024-11-13 23:06:57,618 - ERROR - Error in keyboard listener: module 'keyboard' has no attribute 'GlobalHotKeys'
+2024-11-13 23:06:57,618 - INFO - Text processor stopped
+2024-11-13 23:06:57,618 - INFO - Text processor stopped
+2024-11-13 23:08:14,350 - ERROR - Error in keyboard listener: module 'pynput.keyboard' has no attribute 'GlobalHotKeyListener'
+2024-11-13 23:08:14,350 - INFO - Text processor stopped
+2024-11-13 23:08:14,350 - INFO - Text processor stopped
+2024-11-13 23:13:11,702 - ERROR - Error in keyboard listener: name 'keyboard' is not defined
+2024-11-13 23:13:11,702 - INFO - Text processor stopped
+2024-11-13 23:13:11,702 - INFO - Text processor stopped
+2024-11-13 23:14:26,059 - INFO - Text processor started...
+2024-11-13 23:14:26,127 - WARNING - This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+2024-11-13 23:15:37,793 - INFO - Text processor stopped
+2024-11-13 23:15:37,793 - INFO - Text processor stopped
+2024-11-13 23:15:41,139 - INFO - Text processor started...
+2024-11-13 23:15:41,191 - WARNING - This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+2024-11-13 23:16:07,944 - INFO - Text processor stopped
+2024-11-13 23:16:07,944 - INFO - Text processor stopped
+2024-11-13 23:16:09,596 - INFO - Text processor started...
+2024-11-13 23:16:09,678 - WARNING - This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+2024-11-13 23:20:40,175 - ERROR - Failed to initialize LLM: OpenAI API key not found in environment variables
+2024-11-13 23:21:11,860 - INFO - Text processor started...
+2024-11-13 23:21:11,918 - WARNING - This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+2024-11-13 23:21:51,169 - INFO - Hotkey activated for summarize
+2024-11-13 23:21:51,178 - INFO - Text exceeds maximum length
+2024-11-13 23:21:52,498 - INFO - Hotkey activated for summarize
+2024-11-13 23:21:52,500 - INFO - Text exceeds maximum length
+2024-11-13 23:22:18,441 - INFO - Hotkey activated for summarize
+2024-11-13 23:22:18,443 - INFO - Processing text with summarize...
+2024-11-13 23:22:20,583 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-13 23:22:20,607 - INFO - summarize result copied to clipboard
+2024-11-13 23:22:34,186 - INFO - Hotkey activated for rephrase
+2024-11-13 23:22:34,187 - INFO - Processing text with rephrase...
+2024-11-13 23:22:35,861 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-13 23:22:35,868 - INFO - rephrase result copied to clipboard
+2024-11-13 23:23:15,225 - INFO - Text processor stopped
+2024-11-13 23:23:15,225 - INFO - Text processor stopped
+2024-11-13 23:23:17,016 - INFO - Text processor started...
+2024-11-13 23:23:17,085 - WARNING - This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+2024-11-13 23:23:21,207 - INFO - Hotkey activated for rephrase
+2024-11-13 23:23:21,217 - INFO - Processing text with rephrase...
+2024-11-13 23:23:23,375 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-13 23:23:23,388 - INFO - rephrase result copied to clipboard
+2024-11-13 23:24:14,224 - INFO - Hotkey activated for qna
+2024-11-13 23:24:14,227 - INFO - Processing text with qna...
+2024-11-13 23:24:49,726 - INFO - Text processor started...
+2024-11-13 23:24:49,800 - WARNING - This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+2024-11-13 23:59:58,742 - INFO - Text processor stopped
+2024-11-13 23:59:58,742 - INFO - Text processor stopped
+2024-11-14 00:00:00,963 - INFO - Text processor started...
+2024-11-14 00:00:01,023 - WARNING - This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+2024-11-14 00:00:20,284 - INFO - Hotkey activated for summarize
+2024-11-14 00:00:20,289 - INFO - Processing text with summarize...
+2024-11-14 00:00:26,098 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-14 00:00:26,119 - INFO - summarize result copied to clipboard
+2024-11-14 00:00:37,879 - INFO - Hotkey activated for qna
+2024-11-14 00:00:37,881 - INFO - Processing text with qna...
+2024-11-14 00:00:42,440 - INFO - Hotkey activated for rephrase
+2024-11-14 00:00:42,442 - INFO - Processing text with rephrase...
+2024-11-14 00:00:44,686 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-14 00:00:44,690 - INFO - rephrase result copied to clipboard
+2024-11-14 00:01:03,127 - INFO - Hotkey activated for qna
+2024-11-14 00:01:03,129 - INFO - Processing text with qna...
+2024-11-14 00:01:28,722 - INFO - Hotkey activated for qna
+2024-11-14 00:01:28,725 - INFO - Processing Q&A...
+2024-11-14 00:01:29,888 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-14 00:01:29,891 - INFO - Q&A result copied to clipboard
+2024-11-14 00:02:15,831 - INFO - Text processor stopped
+2024-11-14 00:02:15,831 - INFO - Text processor stopped
