@@ -1,0 +1,41 @@
+sequenceDiagram
+    participant User
+    participant TextProcessor
+    participant Ollama
+    participant PyPerclip
+    participant Keyboard
+
+    User->>TextProcessor: Start text processing
+    TextProcessor->>Ollama: Initialize language model
+    Ollama-->>TextProcessor: Provide LLM instance
+    TextProcessor->>PyPerclip: Get text from clipboard
+    PyPerclip-->>TextProcessor: Return clipboard text
+    TextProcessor->>TextProcessor: Validate text length
+    alt Text is valid
+        TextProcessor->>Ollama: Process text (e.g., summarize, rephrase)
+        Ollama-->>TextProcessor: Return processed text
+        TextProcessor->>PyPerclip: Copy processed text to clipboard
+        PyPerclip-->>User: Clipboard updated
+    else Text is not valid
+        TextProcessor-->>User: Inform user that text is invalid
+    end
+
+    User->>Keyboard: Trigger hotkey (e.g., Cmd+B, Cmd+Q, Cmd+R)
+    Keyboard->>TextProcessor: Notify hotkey activation
+    TextProcessor->>TextProcessor: Determine processing type
+    alt Processing type is QnA
+        TextProcessor->>PyPerclip: Get question from clipboard
+        PyPerclip-->>TextProcessor: Return question
+        TextProcessor->>Ollama: Process question with context text
+        Ollama-->>TextProcessor: Return answer
+        TextProcessor->>PyPerclip: Copy answer to clipboard
+        PyPerclip-->>User: Clipboard updated
+    else Processing type is other (e.g., summarize, rephrase)
+        TextProcessor->>TextProcessor: Process text
+        TextProcessor->>PyPerclip: Copy processed text to clipboard
+        PyPerclip-->>User: Clipboard updated
+    end
+
+    User->>TextProcessor: Stop text processing
+    TextProcessor->>Keyboard: Stop keyboard listener
+    TextProcessor-->>User: Text processor stopped
