@@ -4,7 +4,7 @@ import logging
 import pyperclip
 from pynput import keyboard
 from typing import Optional, Dict, Callable
-from langchain.chat_models import ChatOpenAI
+from langchain.chat_models.ollama import ChatOllama
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains.question_answering import load_qa_chain
@@ -36,13 +36,10 @@ class TextProcessor:
     def _setup_llm(self) -> None:
         """Initialize the language model."""
         try:
-            if not os.getenv('OPENAI_API_KEY'):
-                raise ValueError("OpenAI API key not found in environment variables")
-            
-            self.llm = ChatOpenAI(
-                model_name=self.config.model_name,
+            self.llm = ChatOllama(
+                model=self.config.model_name,
+                base_url="http://localhost:11434",
                 temperature=self.config.temperature,
-                max_tokens=self.config.max_tokens
             )
             
             # Set up different chains for different tasks
@@ -98,7 +95,6 @@ class TextProcessor:
 
             logging.info(f"Processing text with {proc_type.value}...")
             
-            result = None
             if proc_type == ProcessingType.QNA:
                 self.context_text = text
                 self.qa_mode = True
@@ -106,7 +102,7 @@ class TextProcessor:
                 return None
             
             chain = LLMChain(llm=self.llm, prompt=self.prompts[proc_type])
-            result = chain.run(text=text)
+            result = chain.invoke({"text": text})["text"]
 
             if result:
                 pyperclip.copy(result)

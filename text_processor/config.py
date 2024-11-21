@@ -11,9 +11,8 @@ class ProcessingType(Enum):
 @dataclass
 class ProcessorConfig:
     """Configuration for the text processor."""
-    model_name: str = "gpt-3.5-turbo"
+    model_name: str = "llama3.2"
     temperature: float = 0.7
-    max_tokens: int = 150
     hotkeys: Dict[ProcessingType, str] = None
     min_text_length: int = 20
     max_text_length: int = 8000

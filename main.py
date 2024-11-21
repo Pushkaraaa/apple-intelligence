@@ -4,9 +4,8 @@ from text_processor.text_processor import TextProcessor
 
 # Custom configuration
 config = ProcessorConfig(
-    model_name="gpt-3.5-turbo",
+    model_name="llama3.2",
     temperature=0.7,
-    max_tokens=150,
     hotkeys={
         ProcessingType.SUMMARIZE: "<cmd>+1",
         ProcessingType.QNA: "<cmd>+2",
@@ -18,7 +17,7 @@ processor = TextProcessor(config)
 
 try:
     print(f"""
-Text Processor Started
+Text Processor Started whats the most unque feature of taj mahal's gardens
 ---------------------
 Available commands:
 - {config.hotkeys[ProcessingType.SUMMARIZE]}: Summarize clipboard text
