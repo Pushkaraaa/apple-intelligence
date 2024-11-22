@@ -2,6 +2,10 @@ Replicating the powerful "Rewrite" feature offered by Apple's ecosystem on other
 
 
 
-https://youtu.be/Pqt0Ige3_NI
+
+https://github.com/user-attachments/assets/f571e615-e7c6-40e6-8875-c3dd92b20066
+
+
+
 
 ![Untitled](https://github.com/user-attachments/assets/59fa35e6-cba1-4908-ad25-7cc4c9733430)
