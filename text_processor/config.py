@@ -22,7 +22,7 @@ class ProcessorConfig:
     def __post_init__(self):
         if self.hotkeys is None:
             self.hotkeys = {
-                ProcessingType.SUMMARIZE: "<cmd>+1",  # Summarize
-                ProcessingType.QNA: "<cmd>+2",        # Q&A
-                ProcessingType.REPHRASE: "<cmd>+3"    # Rephrase
+                ProcessingType.SUMMARIZE: "<shift>+<ctrl>+j",  # Summarize
+                ProcessingType.QNA: "<shift>+<ctrl>+k",        # Q&A
+                ProcessingType.REPHRASE: "<shift>+<ctrl>+l"    # Rephrase
             }

@@ -7,9 +7,9 @@ config = ProcessorConfig(
     model_name="llama3.2",
     temperature=0.7,
     hotkeys={
-        ProcessingType.SUMMARIZE: "<cmd>+1",
-        ProcessingType.QNA: "<cmd>+2",
-        ProcessingType.REPHRASE: "<cmd>+3"
+        ProcessingType.SUMMARIZE: "<shift>+<ctrl>+j",
+        ProcessingType.QNA: "<shift>+<ctrl>+k",
+        ProcessingType.REPHRASE: "<shift>+<ctrl>+l"
     }
 )
 
@@ -17,12 +17,12 @@ processor = TextProcessor(config)
 
 try:
     print(f"""
-Text Processor Started whats the most unque feature of taj mahal's gardens
+Text Processor Started
 ---------------------
 Available commands:
-- {config.hotkeys[ProcessingType.SUMMARIZE]}: Summarize clipboard text
-- {config.hotkeys[ProcessingType.QNA]}: Q&A mode (press once to set context, again with question)
-- {config.hotkeys[ProcessingType.REPHRASE]}: Rephrase clipboard text
+- Ctrl+Shift+J: Summarize clipboard text
+- Ctrl+Shift+K: Q&A mode (press once to set context, again with question)
+- Ctrl+Shift+L: Rephrase clipboard text
 - Press Ctrl+C to exit
 
 Text requirements:
