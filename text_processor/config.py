@@ -7,6 +7,7 @@ class ProcessingType(Enum):
     SUMMARIZE = "summarize"
     QNA = "qna"
     REPHRASE = "rephrase"
+    RESPONSE = "respond
 
 @dataclass
 class ProcessorConfig:
